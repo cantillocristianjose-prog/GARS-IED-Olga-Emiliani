@@ -1,38 +1,11 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-
+"""Ctrl + Shift + P y poner "Python: Select Interpreter" y seleccionar el interprete de python que diga venv"""
 import reflex as rx
-
-from rxconfig import config
-
-
-class State(rx.State):
-    """The app state."""
+import styles.styles as styles
+from pages.index import index
+from pages.creditos import creditos
 
 
-def index() -> rx.Component:
-    # Welcome Page (Index)
-    return rx.container(
-        rx.color_mode.button(position="top-right"),
-        rx.vstack(
-            rx.heading("Welcome to Reflex!", size="9"),
-            rx.text(
-                "Get started by editing ",
-                rx.code(f"{config.app_name}/{config.app_name}.py"),
-                size="5",
-            ),
-            rx.link(
-                rx.button("Check out our docs!"),
-                href="https://reflex.dev/docs/getting-started/introduction/",
-                is_external=True,
-            ),
-            spacing="5",
-            justify="center",
-            min_height="85vh",
-        ),
-    )
-
-
-app = rx.App()
-app.add_page(index)
-#para activar el entorno virtual
-#Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned (y depues) .\venv\Scripts\activate
+app = rx.App(
+    style=styles.BASE_STYLE,
+    stylesheets=styles.STYLESHEETS
+)
