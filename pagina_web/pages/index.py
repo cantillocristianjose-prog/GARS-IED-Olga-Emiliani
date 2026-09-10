@@ -5,7 +5,7 @@ from styles.styles import Size
 from styles.colors import Color
 from components.navbar import navbar
 from views.header import header
-from views.index_info import index_info
+#from views.index_info import index_info
 
 
 

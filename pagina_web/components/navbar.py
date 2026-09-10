@@ -8,8 +8,10 @@ import styles.styles as styles
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.link(
-        rx.image(
-            "/assests/images/logo.png"
+        rx.text(
+            "GARS",
+            style=styles.nabvar_title_style,
+            color=TextColor.HEADER.value,as_="span"
         ),
         href=Route.INDEX.value
         ),

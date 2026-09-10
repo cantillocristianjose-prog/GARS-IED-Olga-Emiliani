@@ -4,3 +4,4 @@ assets/external/
 .web
 __pycache__/
 *.db
+.venv
