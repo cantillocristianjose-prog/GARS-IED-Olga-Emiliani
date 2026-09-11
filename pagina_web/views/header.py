@@ -10,10 +10,10 @@ from styles.styles import Size,Spacing
 def header() -> rx.Component:
     return rx.vstack(
         rx.center(
-            rx.box(
-                rx.text("hola mundo"),
-                background_color=Color.CONTENT.value,
-            )
+            # rx.box(
+            #     rx.text("hola mundo"),
+            #     background_color=Color.CONTENT.value,
+            # )
         ),
         spacing=Spacing.BIG.value,
         align="start",

@@ -6,14 +6,15 @@ from styles.styles import Size
 from styles.colors import Color
 from components.navbar import navbar
 from views.header import header
+from views.creditos_info import creditos_info
 
 
 @rx.page(
     route=Route.CREDITOS.value,
-    title=utils.libros_title,
-    description=utils.libros_descripcion,
+    title=utils.creditos_title,
+    description=utils.creditos_descripcion,
     image=utils.preview,
-    meta=utils.videos_meta
+    meta=utils.creditos_meta
 )
 
 def creditos() -> rx.Component:
@@ -22,10 +23,8 @@ def creditos() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                header(
-
-                ),
-                #libros_link(),
+                #header(),
+                creditos_info(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y=Size.BIG.value,

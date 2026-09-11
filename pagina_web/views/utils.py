@@ -1,5 +1,4 @@
 import reflex as rx
-from datetime import datetime,timezone,timedelta
 #Comun
 
 def lang() -> rx.Component:
@@ -16,8 +15,8 @@ _meta = [
 
 #Index
 
-index_title = "El cuartel de TheObsidianBoy"
-index_descripcion = "Hola mi nombre es TheObsidianBoy y soy creador de contenido"
+index_title = "Gestion Analisis y Resgistro de Saber 11"
+index_descripcion = ""
 
 index_meta = [
     {"name": "og:title", "content": index_title},
@@ -25,14 +24,14 @@ index_meta = [
 ]
 
 index_meta.extend(_meta)
-#Videos
+#Creditos
 
-libros_title = "TheObsidianBoy | Libros"
-libros_descripcion = "este es un listado de mis libros"
+creditos_title = "GARS | creditos"
+creditos_descripcion = ""
 
-videos_meta = [
-    {"name": "og:title", "content": libros_title},
-    {"name": "og:description", "content": libros_descripcion}
+creditos_meta = [
+    {"name": "og:title", "content": creditos_title},
+    {"name": "og:description", "content": creditos_descripcion}
 ]
-videos_meta.extend(_meta)
+creditos_meta.extend(_meta)
 

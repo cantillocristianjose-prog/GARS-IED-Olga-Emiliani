@@ -5,7 +5,7 @@ from styles.styles import Size
 from styles.colors import Color
 from components.navbar import navbar
 from views.header import header
-#from views.index_info import index_info
+from views.index_info import index_info
 
 
 
@@ -23,10 +23,8 @@ def index() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                header(
-
-                ),
-                # index_info(),
+                #header(),
+                index_info(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y=Size.BIG.value,
