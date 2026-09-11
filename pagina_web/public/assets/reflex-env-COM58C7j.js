@@ -1,0 +1,1 @@
+var e={PING:`http://apithe.up.railway.app/ping`,EVENT:`ws://apithe.up.railway.app/_event`,UPLOAD:`http://apithe.up.railway.app/_upload`,AUTH_CODESPACE:`http://apithe.up.railway.app/auth-codespace`,HEALTH:`http://apithe.up.railway.app/_health`,ALL_ROUTES:`http://apithe.up.railway.app/_all_routes`,TRANSPORT:`websocket`,TEST_MODE:!1};export{e as t};
